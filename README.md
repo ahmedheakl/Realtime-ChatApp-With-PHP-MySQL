@@ -14,6 +14,6 @@ A simple WhatsApp-like app for Realtime chatting created using PHP as its  backe
 
 ## Website Samples
 
-<img width='600' heigh='550' src='https://github.com/ahmedheakl/Realtime-ChatApp-With-PHP-MySQL/blob/main/chats.png'>
-<img width='600' heigh='550' src='https://github.com/ahmedheakl/Realtime-ChatApp-With-PHP-MySQL/blob/main/login.png'>
-<img width='600' heigh='550' src='https://github.com/ahmedheakl/Realtime-ChatApp-With-PHP-MySQL/blob/main/chat-messages.png'>
+<img width='400' heigh='450' src='https://github.com/ahmedheakl/Realtime-ChatApp-With-PHP-MySQL/blob/main/chats.png'>
+<img width='400' heigh='450' src='https://github.com/ahmedheakl/Realtime-ChatApp-With-PHP-MySQL/blob/main/login.png'>
+<img width='400' heigh='450' src='https://github.com/ahmedheakl/Realtime-ChatApp-With-PHP-MySQL/blob/main/chat-messages.png'>
