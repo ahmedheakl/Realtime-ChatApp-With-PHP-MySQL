@@ -1,0 +1,163 @@
+@import url("pages/users.css");
+@import url("pages/chats.css");
+@font-face {
+  font-family: kg-happy;
+  src: url("fonts/kg-happy-font/KgHappySolid-myDG.ttf");
+}
+
+@font-face {
+  font-family: beautiful-every-time;
+  src: url("fonts/BeautifulEveryTime-Dg4m.ttf");
+}
+
+@font-face {
+  font-family: monospaced;
+  src: url("fonts/Anonymous_Pro.ttf");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: kg-happy;
+  text-decoration: none;
+}
+
+body {
+  background-color: rgba(0, 0, 0, 0.87);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  height: auto;
+  width: auto;
+  border-radius: 20px;
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  box-shadow: 7px 8px 13px 3px rgb(255 255 255 / 24%);
+}
+
+.header-data {
+  width: 100%;
+  font-size: large;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 3px;
+  margin-bottom: 10px;
+  border-bottom: 3px solid rgb(219, 219, 219);
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 10px 0;
+  border-bottom: 3px solid rgb(219, 219, 219);
+}
+@media (max-width: 540px) {
+  .user-name-data {
+    flex-direction: column;
+  }
+
+  .user-name div:first-child {
+    margin-right: 0px !important;
+  }
+
+  .error-message {
+    width: 300px !important;
+  }
+
+  .card {
+    max-width: 320px;
+  }
+}
+
+.user-name-data {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.user-name-data div:first-child {
+  margin-right: 10px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.field input {
+  outline: none;
+  padding: 3px 5px;
+  border-radius: 5px;
+  border-radius: 2px solid rgba(0, 0, 0, 0.87);
+}
+
+.form button {
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 0 0 0 0 black;
+  background-color: rgba(0, 0, 0, 0.87);
+  color: white;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.form button:hover {
+  box-shadow: black 4px 4px 15px;
+}
+
+.form + span {
+  margin-top: 10px;
+  color: black;
+}
+
+.form + span a {
+  color: coral;
+}
+.form + span a:hover {
+  text-decoration: underline;
+}
+
+.error-message {
+  padding: 10px;
+  background-color: #ff8181d4;
+  width: 400px;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  font-family: monospaced;
+  font-weight: bold;
+  display: none;
+}
+
+.show-tag {
+  opacity: 0.4;
+}
+
+.hide-tag:after {
+  position: absolute;
+  content: "/";
+  color: black;
+  font-weight: 700;
+  font-size: 1.7em;
+  left: 5px;
+  top: -9px;
+}
+
+input[placeholder="Enter your password"] + i {
+  transform: translate(88%, -142%);
+  cursor: pointer;
+}
+
+input[placeholder="Enter a new password"] + i {
+  transform: translate(91%, -142%);
+  cursor: pointer;
+}

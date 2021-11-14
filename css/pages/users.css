@@ -1,0 +1,158 @@
+.user-data {
+  min-width: 390px;
+  display: flex;
+  border-bottom: 2px solid rgb(219, 219, 219);
+  padding-bottom: 10px;
+  align-items: center;
+}
+
+@media (max-width: 545px) {
+  .user-data {
+    min-width: 310px;
+  }
+
+  .user-name span:first-child {
+    font-size: 15px !important;
+  }
+
+  .user-name span:last-child {
+    font-size: 14px !important;
+  }
+}
+
+.user-name {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.user-data img {
+  margin-right: 15px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.user-name span:first-child {
+  font-size: 20px;
+}
+
+.user-name span:last-child {
+  margin-top: -5px;
+  font-size: 17px;
+  font-weight: bold;
+  font-family: beautiful-every-time;
+}
+
+.user-data a {
+  color: white;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.87);
+  padding: 6px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  margin: 5px 0 10px 2px;
+}
+
+section.content {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.styled-input {
+  padding: 5px;
+  flex-grow: 1;
+  margin-right: 5px;
+  border-radius: 5px;
+  outline: none;
+  border: 2px solid rgba(0, 0, 0, 0.87);
+  box-shadow: 2px 2px 4px 0px #000000a6;
+}
+
+@keyframes shadow-animation {
+  50% {
+    box-shadow: 3px 2px 8px 0px #000000a6;
+  }
+
+  100% {
+    box-shadow: none;
+  }
+}
+
+.styled-button {
+  border-radius: 0 5px 5px 0;
+  border: none;
+  outline: none;
+  padding: 6px 5px;
+  background-color: rgba(0, 0, 0, 0.87);
+  flex-grow: 0.2;
+  cursor: pointer;
+  transition: 0.5s;
+  animation-name: shadow-animation;
+  animation-duration: 1s;
+  animation-play-state: paused;
+  animation-iteration-count: infinite;
+}
+
+.styled-button:hover {
+  animation-play-state: running;
+}
+
+svg:not(:root).svg-inline--fa {
+  color: white;
+}
+.search i {
+  font-size: 20px;
+  color: white;
+}
+
+.users-list {
+  max-height: 350px;
+  overflow-y: auto;
+}
+
+.user-link {
+  display: block;
+  color: black;
+  transition: 0.5s;
+  margin-top: 10px;
+}
+
+.user-link:first-child {
+  margin-top: 0;
+}
+
+.users-list::-webkit-scrollbar {
+  width: 3px;
+}
+
+.users-list img {
+  width: 40px;
+  height: 40px;
+}
+
+.users-list span:first-child {
+  font-size: 15px;
+}
+
+.users-list span:last-child {
+  margin-top: 0px;
+  font-size: 14px;
+}
+
+.users-list .user-data {
+  padding: 0;
+  border: none;
+}
+
+.user-data > span {
+  width: 10px;
+  height: 10px;
+  background-color: green;
+  border-radius: 50%;
+}
